@@ -12,9 +12,7 @@ This C# console application demonstrates the concepts of abstract classes and me
 
 1. **Abstract Classes**: The Shape class cannot be instantiated directly and serves as a template
 2. **Abstract Methods**: The `GetArea()` method must be implemented by all derived classes
-3. **Method Overriding**: Derived classes provide their own implementation of the abstract method
-4. **Polymorphism**: The same method call produces different results based on the object type
-5. **Virtual Methods**: The base class also contains a virtual method that can be overridden
+3. **Method Implementation**: Derived classes provide their own implementation of the abstract method
 
 ## How to Run
 
@@ -31,25 +29,8 @@ dotnet run
 ## Expected Output
 
 ```
-Abstract Classes and Methods Demo - Shape Area Calculator
-========================================================
-
-Calculating areas using abstract methods:
-----------------------------------------
-Circle with radius 5:
-Area: 78.54
-
-Rectangle with length 4 and width 6:
-Area: 24.00
-
-Demonstrating Polymorphism with Shape Array:
-============================================
-Shape 1: Circle with radius 5:
-Area: 78.54
-Shape 2: Rectangle with length 4 and width 6:
-Area: 24.00
-
-Press any key to exit...
+Circle area: 78.54
+Rectangle area: 24.00
 ```
 
 ## Learning Objectives
@@ -58,12 +39,9 @@ Press any key to exit...
 - Learn how to use the `abstract` keyword for classes and methods
 - See how abstract methods force derived classes to provide implementations
 - Practice creating class hierarchies with abstract base classes
-- Understand the difference between abstract and virtual methods
 
 ## Code Features
 
 - **Abstract Base Class**: Shape class with abstract GetArea() method
-- **Constructor Parameters**: Circle and Rectangle classes accept dimensions in their constructors
-- **Method Overriding**: Both derived classes override the abstract method
-- **Polymorphism**: Array of Shape objects demonstrates runtime polymorphism
-- **Formatted Output**: Areas are displayed with 2 decimal places 
+- **Simple Implementation**: Both derived classes implement the abstract method
+- **Basic Demo**: Creates instances and displays their areas 
