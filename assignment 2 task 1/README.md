@@ -12,8 +12,7 @@ This C# console application demonstrates the concepts of inheritance and method 
 
 1. **Inheritance**: Dog and Cat classes inherit from the Animal base class
 2. **Method Overriding**: The `MakeSound()` method is overridden in derived classes
-3. **Polymorphism**: The same method call produces different results based on the object type
-4. **Virtual Methods**: The base class method is marked as `virtual` to allow overriding
+3. **Virtual Methods**: The base class method is marked as `virtual` to allow overriding
 
 ## How to Run
 
@@ -30,30 +29,20 @@ dotnet run
 ## Expected Output
 
 ```
-Animal Inheritance and Method Overriding Demo
-=============================================
-
-Generic Animal says:
 Some generic sound
-
-Dog says:
 Bark
-
-Cat says:
 Meow
-
-Demonstrating Polymorphism:
-===========================
-Animal 1 says: Some generic sound
-Animal 2 says: Bark
-Animal 3 says: Meow
-
-Press any key to exit...
 ```
 
 ## Learning Objectives
 
 - Understand how inheritance works in C#
 - Learn how to use the `virtual` and `override` keywords
-- See polymorphism in action
-- Practice creating class hierarchies 
+- Practice creating class hierarchies
+- See method overriding in action
+
+## Code Features
+
+- **Base Class**: Animal class with virtual MakeSound() method
+- **Derived Classes**: Dog and Cat classes that override the MakeSound() method
+- **Simple Demo**: Creates instances and calls MakeSound() on each 
